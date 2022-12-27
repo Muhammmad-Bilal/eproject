@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.flaticon.com">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>BOYS Bag </title>
+    <style>
+ .banner-image {
+        background-image: url('images/banner5.jpg');
+        background-size: cover;
+      }
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.container6
+{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  
+  font-family: 'Megrim', cursive;
+}
+.card4
+{
+  width:280px;
+  height:370px;
+  margin:30px 15px;
+  border-radius:15px;
+  padding:1.7em;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  transition: transform 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(black, 0.5);
+}
+.card4 img 
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:15px;
+}
+.info-card1
+{
+  position:relative;
+  z-index:3;
+  color:#fff;
+  transform:translateY(50px);
+  transition:transform 0.4s;
+  opacity:0;
+}
+.info-card1 p
+{
+  letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: 8px;
+}
+.card4:before
+{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  background-color:rgba(0,0,0,0.7);
+  transition:opacity 0.5s;
+  border-radius:15px;
+  z-index:2;
+}
+.card4:hover
+{
+  transform:translateY(20px);
+}
+.card4:hover .info-card1
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+.card4:hover::before
+{
+  opacity:1;
+}
+.bb{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 5px;
+
+}
+    </style>
+</head>
+<body>
+<!-- Navbar  -->
+              
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo-removebg-preview.png" alt="" ></a>   
+    <div class="container">
+    
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarNav">        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">HOME</a>
+</li>
+          <li class="nav-item">
+                          <a class="nav-link text-white"  href="luggage.html">LUGGAGES</a>
+          </li>
+          <li class="nav-item">
+               
+              <!-- dropdown  -->
+               <div class="dropdown">
+                 <a class="btn text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                   BACKPACKS
+                 </a>
+               
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                   <li><a class="dropdown-item" href="girlbag.html">GIRLS BACKPACKS</a></li>
+                   <li><a class="dropdown-item" href="boysbag.html">BOYS BACKPACKS</a></li>
+                 
+                 </ul>
+               </div>
+               <!-- dropdown -->
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contactus.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Gallery.html">GALLERY</a>
+          </li>
+           
+          <li class="nav-item">
+              <a class="nav-link text-white" href="aboutus.html">ABOUT US</a>
+            </li>
+                    </ul>
+      </div>
+      <button class="add-cart"> ADD CART<span class="badge" id="btt"><sup>0</sup></span></button>
+    </div>
+  </nav>
+  
+
+            <!-- Banner Image  -->
+  <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+      <div class="bg-image"></div>
+<div class="bg-text">
+<h1><strong>BOYS BACKPACKS</strong></h1>
+<p><strong>Luggage Bags, Girls Backpacks, Boy Backpacks, Laptop & Other Bags.</strong></p>
+
+</div>
+                     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container6">
+        <div class="card4">
+          <img src="images/boy1.jpg" >
+          <div class="info-card1">
+            <h1>BAG</h1>
+            <p>RS:500</p>
+            <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+          </div>
+        </div>
+        <div class="card4">
+          <img src="images/boy2.jpg" alt="">
+          <div class="info-card1">
+            <h1>BLUE BAG</h1>
+            <p>1500</p>
+            <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+          </div>
+        </div>  
+        <div class="card4">
+          <img src="images/boy3.jpg" alt="">
+          <div class="info-card1">
+            <h1>BAG </h1>
+            <p>1,520</p>
+            <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+          </div>
+        </div>  
+        <div class="card4">
+          <img src="images/boy4.jpg" alt="">
+          <div class="info-card1">
+            <h1> BAG</h1>
+            <p>RS:3,250</p>
+            <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+          </div>
+        </div>  
+        <div class="card4">
+          <img src="images/boybag.jpg" alt="">
+          <div class="info-card1">
+            <h1>BAG</h1>
+            <p>RS:800</p>
+            <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+          </div>
+        </div>    
+        <div class="card4">
+            <img src="images/bag3.jpg" alt="">
+            <div class="info-card1">
+              <h1>LAPTOP BAG</h1>
+              <p>RS:1100</p>
+              <a class="btn btn-primary"  role="button"  id="cc">ORDER NOW</a>
+            </div>
+          </div>    
+        
+        
+        
+        
+      <div>
+
+
+        <footer class="animated lightSpeedIn" id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>BronX LUGGAGES</h3>
+                    <p>The beauty of receiving high quality luggage is a truly amazing feeling. Great luggage can be passed down from family members who are experienced travelers. A high-quality set of luggage will last a lifetime.
+        
+                      Bronx Luggage, located in the Festival Marketplace, offers a wide selection of luggage from affordable sets to the best brands on the market for all of your travel needs.  We also stock Jansport Backpacks, travel accessories, briefcases and much more.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="home.html">Home</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="aboutus.html">About Us</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="contactus.html">contact Us</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="https://www.google.com/maps">Site Map</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="contactus.html">Feedback</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                      2900 W. Sample Road, <br>
+                             store #270, Pompano Beach,<br>
+                              FL, United States, 33073
+                            <strong>Phone:</strong>0316-2881956<br>
+                            <strong>Email:</strong> info@bronxluggages.com<br>
+                    </p>
+                    <div class="social-links">
+                      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+                      <a href="
+                      https://www.google.com" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                      <a href="https://www.linkedin.com/login" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>A newsletter is a printed report containing news (information) of the activities of a business (legal name; subscription business model) or an organization (institutions, societies, associations) that is sent by mail regularly to all its members, customers, employees</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit" class="hover-sub" value="Subscribe">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="copyright">
+                © Copyright <strong>BronX Luggages</strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="home.html">BronX luggages</a>
+              </div>
+            </div>
+          </footer>
+                <script type="text/javascript">
+            var nav = document.querySelector('nav');
+            window.addEventListener('scroll', function () {
+              if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+              } else {
+                nav.classList.remove('bg-dark', 'shadow');
+              }
+                    });
+                      </script>
+                      
+                <script>
+                  $(document).ready(function(){
+                    $('.btn').click(function(){
+                      var i;
+                      i=$('#btt').text();
+                      i=Number(i)+1;
+                      $('#btt').text(i);
+                      alert( i + 'item is addad' )
+                    });
+                  });
+                </script>
+                
+
+
+
+
+
+
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</html>
